@@ -2,7 +2,7 @@
 * Projeto para processo seletivo da 2B.
 
 ### 💻 Deploy do projeto
-* https://juliomacedo89.github.io/coffee-store/
+* s
 
 ### 🎯 Objetivos  do projeto 
 
