@@ -1,10 +1,17 @@
 import { Container, Content } from './styles'
 
+import toTopImg from '../../assets/img/toTop.png'
 
 export default function Footer(){
 
-    return(
+    function toTop(){
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
 
+    return(
         <Container>
             <Content>
                 <div className="company-information">
@@ -80,6 +87,9 @@ export default function Footer(){
                     </div>
                 </div>
             </Content>
+            <div className="toTop">
+                <img src={toTopImg} alt="Topo" onClick={toTop} />
+            </div>
         </Container>
     )
 }

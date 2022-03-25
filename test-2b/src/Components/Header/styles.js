@@ -15,12 +15,28 @@ export const Content = styled.div `
 
     padding: 3.75rem 1rem;
 
+    @media(max-width: 900px){
+        padding: 2rem 1rem;
+    }
+
     .logo{
         width: 54%;
+
+        img{
+            
+            width: min(70%, 150px);
+        }
     }
 
     .menu{
         width: 46%;
+
+        @media(max-width: 900px){
+            display: flex;
+            justify-content: flex-end;
+
+            padding: 0 1rem;
+        }
 
         nav{
             width: 100%;
@@ -28,6 +44,11 @@ export const Content = styled.div `
 
             display: flex;
             align-items: center;
+
+            @media(max-width: 900px){
+                display: none;
+                justify-content: flex-end;
+            }
 
             ul{
                 width: 100%;
@@ -63,6 +84,15 @@ export const Content = styled.div `
                     
                 }
                 
+            }
+        }
+
+        img{
+            display: none;
+            cursor: pointer;
+
+            @media(max-width: 900px){
+                display: flex;
             }
         }
 

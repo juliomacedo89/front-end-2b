@@ -12,6 +12,10 @@ export const Content = styled.div `
 
     padding: 4.7rem 0;
 
+    @media(max-width: 900px){
+        padding: 3.5rem 0;
+    } 
+
     ul{
         display: flex;
         align-items: center;
@@ -20,6 +24,10 @@ export const Content = styled.div `
 
         img{
             transition: 200ms all ease-in-out;
+
+            @media(max-width: 900px){
+                width: 80%;
+            } 
         }
 
         img:hover{

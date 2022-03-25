@@ -29,11 +29,16 @@ export const Main = styled.main `
 
         padding: 7.25rem 1rem 10.25rem;
 
+        @media(max-width: 900px){
+            padding: 3.5rem 1rem;
+            gap: 3rem;  
+        }
+
         .features__container-title{
             width: 100%;
 
             h2{
-                font-size: 2rem;
+                font-size: clamp(1.25rem, 1.0761rem + 0.8696vw, 2rem);
                 line-height: 2rem;
                 font-weight: 700;
 
@@ -49,7 +54,7 @@ export const Main = styled.main `
                 max-width: 760px;
                 margin: 0 auto;
 
-                font-size: 1.25rem;
+                font-size: clamp(0.85rem, 0.7572rem + 0.4638vw, 1.25rem);
                 line-height: 1.5rem;
                 font-weight: 400;
             
@@ -69,30 +74,61 @@ export const Main = styled.main `
             display: flex;
             gap: 2.75rem;
 
+            @media(max-width: 900px){
+                align-items: center;
+            }
+
+            img{
+                @media(max-width: 900px){
+                    width: 100%;
+                    max-width: 60px;
+                }
+            }
+
+            @media(max-width: 900px){
+                flex-direction: column;
+            }
+
             .features-item{
                 width: 100%;
-                max-width: 275px;
+                max-width: 290px;
 
                 display: flex;
                 gap: 2rem;
 
+                img{
+                    @media(max-width: 900px){
+                        width: 100%;
+                        max-width: 100px;
+                    }
+                }
+
+
                 .description{
                     h3{
-                        font-size: 1.375rem;
+                        font-size: clamp(1rem, 0.9130rem + 0.4348vw, 1.375rem);
                         line-height: 1.5rem;
                         font-weight: 400;
                 
                         margin-bottom: 1rem;
                         
                         color: var(--black);
+
+                        @media(max-width: 900px){
+                            flex-direction: column;
+                        }
                     }
 
                     p{
-                        font-size: 1rem;
+                        font-size: clamp(0.85rem, 0.8152rem + 0.1739vw, 1rem);
                         line-height: 1.25rem;
                         font-weight: 400;
                         
                         color: var(--grey);
+
+                        @media(max-width: 900px){
+                            flex-direction: column;
+                        }
                     }
                 }
             }

@@ -13,9 +13,13 @@ export const Content = styled.div `
 
     padding: 6.4rem 1rem 0;
 
+    @media(max-width: 900px){
+        padding: 3.5rem 1rem 0;  
+    }
+
     h2{
-        font-size: 2.5rem;
-        line-height: 2rem;
+        font-size: clamp(1.5rem, 1.2681rem + 1.1594vw, 2.5rem);
+        line-height: 2,5rem;
         font-weight: 700;
         
         text-align: center;
@@ -30,7 +34,7 @@ export const Content = styled.div `
         max-width: 760px;
         margin: 0 auto;
 
-        font-size: 1.25rem;
+        font-size: clamp(0.85rem, 0.7572rem + 0.4638vw, 1.25rem);
         line-height: 1.5rem;
         font-weight: 400;
 
@@ -51,6 +55,10 @@ export const Content = styled.div `
       
         gap: 1.25rem;
 
+        @media(max-width: 900px){
+            flex-direction: column;
+        }
+
         label{
             width: 100%;
             max-width: 580px;
@@ -59,6 +67,7 @@ export const Content = styled.div `
         input{
             width: 100%;
             max-width: 580px;
+            min-width: 270px;
 
             padding: 1rem 2rem;
 
@@ -80,21 +89,22 @@ export const Content = styled.div `
         }
 
         button{
-            width: 100%;
-            max-width: 128px;
+            width: clamp(5.5rem, 4.9203rem + 2.8986vw, 8rem);
+            height: clamp(2.5rem, 2.1522rem + 1.7391vw, 3.3rem);
 
             border: 2px solid var(--black);
             border-radius: 5px;
 
-            padding: .81rem 2rem;
+            padding: 0 .81rem;
 
             background: var(--yellow);
 
-            font-size: 1rem;
-            line-height: 1.5rem;
+            font-size: clamp(0.75rem, 0.6920rem + 0.2899vw, 1rem);
+            
             font-weight: 700;
 
             text-transform: uppercase;
+            text-align: center;
 
             color: var(--black);
 
