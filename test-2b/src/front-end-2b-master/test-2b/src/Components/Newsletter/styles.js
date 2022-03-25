@@ -109,8 +109,6 @@ export const Content = styled.div `
             color: var(--black);
 
             transition: 200ms all ease-in-out;
-            -webkit-transition: 200ms all ease-in-out;
-            -moz-transition: 200ms all ease-in-out;
         }
 
         button:hover{

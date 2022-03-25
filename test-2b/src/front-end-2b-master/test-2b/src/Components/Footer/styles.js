@@ -64,8 +64,6 @@ export const Content = styled.div `
         a{
             display: block;
             transition: 200ms all ease-in-out;
-            -webkit-transition: 200ms all ease-in-out;
-            -moz-transition: 200ms all ease-in-out;
 
             @media(max-width: 900px){
                 padding: .75rem 0;  
@@ -113,8 +111,6 @@ export const Content = styled.div `
 
                 color: var(--white);
                 transition: 200ms all ease-in-out;
-                -webkit-transition: 200ms all ease-in-out;
-                -moz-transition: 200ms all ease-in-out;
 
                 }
 

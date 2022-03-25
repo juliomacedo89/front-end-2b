@@ -24,8 +24,6 @@ export const Content = styled.div `
 
         img{
             transition: 200ms all ease-in-out;
-            -webkit-transition: 200ms all ease-in-out;
-            -moz-transition: 200ms all ease-in-out;
 
             @media(max-width: 900px){
                 width: 80%;
@@ -34,8 +32,6 @@ export const Content = styled.div `
 
         img:hover{
             transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
         }
     }
     }
